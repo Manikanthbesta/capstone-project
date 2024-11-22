@@ -1,0 +1,76 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: API-GATEWAY
+
+  cloud:
+    config:
+      enabled: false # Disable Config Server requirement
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: customer
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/customers/**
+
+        - id: orders
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/orders/**
+
+        - id: product
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/products/**
+
+        - id: vendor
+          uri: lb://VENDOR-SERVICE
+          predicates:
+            - Path=/vendors/**
+
+        - id: vendor-advertisement
+          uri: lb://VENDOR-SERVICE
+          predicates:
+            - Path=/advertisements/**
+
+        - id: sequence
+          uri: lb://Sequence
+          predicates:
+            - Path=/sequences/**
+
+        - id: product-review
+          uri: lb://ProductReview
+          predicates:
+              - Path=/pdreviews/**
+
+        - id: vendor-review
+          uri: lb//Vendor_Review
+          predicates:
+            - Path=/vreviews/**
+
+        - id: order-item
+          uri: lb//OrderItem
+          predicates:
+            - Path=/orderitems/**
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty: DEBUG

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/API-Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Customer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Discovery-Eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OrderItem/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Orders/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ProductReview/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Sequence/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vendor-Advertisement/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vendor-Review/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Vendor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authentication/src/main/java" charset="UTF-8" />
+  </component>
+</project>

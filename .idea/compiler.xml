@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Orders" />
+        <module name="Vendor_Advertisement" />
+        <module name="API-Gateway" />
+        <module name="Vendor_Advertisement (1)" />
+        <module name="Customer" />
+        <module name="OrderItem" />
+        <module name="Product" />
+        <module name="Vendor_Review" />
+        <module name="Vendor" />
+        <module name="ProductReview" />
+        <module name="authentication" />
+        <module name="Discovery-Eureka" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API-Gateway" options="-parameters" />
+      <module name="Customer" options="-parameters" />
+      <module name="Discovery-Eureka" options="-parameters" />
+      <module name="OrderItem" options="-parameters" />
+      <module name="Orders" options="-parameters" />
+      <module name="Product" options="-parameters" />
+      <module name="ProductReview" options="-parameters" />
+      <module name="Vendor" options="-parameters" />
+      <module name="Vendor_Advertisement" options="-parameters" />
+      <module name="Vendor_Advertisement (1)" options="-parameters" />
+      <module name="Vendor_Review" options="-parameters" />
+      <module name="authentication" options="-parameters" />
+    </option>
+  </component>
+</project>
